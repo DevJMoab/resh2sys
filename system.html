@@ -8,15 +8,29 @@
     <link rel="stylesheet" href="/system/css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="/system/img/logo.png" alt="Logo">
-        <ul>
-            <li><a href="#"><i class="material-icons">menu</i></a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
+        <div class="menu-left">
+            <img src="/system/img/logo.png" alt="Logo">
+            <ul>
+                <li><a href="#"><i class="material-icons">menu</i></a></li>
+                <li class="hidden"><a href="#">Dashboard</a></li>
+                <li class="hidden"><a href="#">Users</a></li>
+                <li class="hidden"><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-rigth">
+            <ul>
+                <li class="hidden"><a><i class="material-icons">notifications_none</i><span class="box box-pill box-notifications">2</span></a></li>
+                <li class="hidden"><a><i class="material-icons">format_list_bulleted</i><span class="box box-pill box-tasks">2</span></a></li>
+                <li class="hidden"><a><i class="material-icons">mail_outline</i><span class="box box-pill box-messages">2</span></a></li>
+                <li><img src="/system/img/tecn.jpg" alt=""></li>
+                <li><i class="material-icons">menu</i></li>
+            </ul>
+        </div>
+
     </header>
     <div class="sidebar">
         <nav>

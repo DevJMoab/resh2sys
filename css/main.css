@@ -55,22 +55,27 @@ body{
     font-family: var(--sans-serif);
 }
 
-header {
+header{
     height: 55px;
     border-bottom: 1px solid var(--dark);
     background-color: var(--header);
     display: flex;
-    
+    justify-content: space-between;
+
 }
 
-header ul {
+header .menu-left {
+    display: flex;
+}
+
+header .menu-left ul {
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 15px;
 }
 
-header ul li, i{
+header .menu-left ul li, i{
     margin-left: 24px;
     text-align: center;
     justify-content: center;
@@ -78,21 +83,70 @@ header ul li, i{
     font-size: 14px;    
 }
 
-header ul li a{
+header .menu-left ul li a{
     text-decoration: none;
     color: var(--gray);
     transition: 400ms;
 }
 
-header ul li a:hover{
+header .menu-left ul li a:hover{
     color: var(--light);
 }
 
-header img{
+header .menu-left img{
     margin-top: 18px;
     margin-left: 32px;
     height: 24px;
 }
+
+header .menu-rigth{
+    color: var(--gray);
+    padding: 8px;
+}
+
+span .box{
+    width: 30px;
+}
+
+.box-notifications{
+    color: #fff;
+    background-color: var(--danger)
+}
+.box-tasks{
+    color: #fff;
+    background-color: var(--yellow)
+}
+.box-messages{
+    color: #fff;
+    background-color: var(--primary)
+}
+
+.box-pill{
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+
+
+header .menu-rigth ul{
+    margin-top: 8px;
+}
+
+header .menu-rigth ul li{ 
+    display: inline;
+}
+
+header .menu-rigth ul li:hover{
+    color: var(--light);
+}
+
+header .menu-rigth ul li img{
+    border-radius: 50%;
+    width: 35px;
+    margin-left: 30px;
+}
+
 /*--------------------sidebar------------------*/
 .sidebar{   
     height: 88vh;
@@ -170,4 +224,27 @@ header img{
 }
 
 
+@media (max-width: 950px) {
+    header li.hidden {
+        visibility: hidden; 
+    }
+    header .menu-left img{
+        position: absolute;
+        left: 50%;
+        margin-left: 0;
+    }
+    .menu-left{
+        width: 30px;
+    }
 
+    .menu-left ul li i{
+        margin-left: 0;
+    }
+
+    .menu-left ul{
+        margin-left: -8px;
+    }
+
+  
+
+}
