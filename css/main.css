@@ -48,7 +48,6 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body{
@@ -95,7 +94,7 @@ header img{
     height: 24px;
 }
 /*--------------------sidebar------------------*/
-.sidebar{
+.sidebar{   
     height: 88vh;
     width: 200px;
     display: flex;
@@ -112,11 +111,7 @@ header img{
     color: #e4e7ea;
 }
 
-.sidebar i{
-    color: var(--gray2);
-}
-
-.sidebar .dash{
+.sidebar i.dash{
     color: var(--blue);
 }
 
@@ -136,11 +131,19 @@ header img{
 .sidebar nav ul li{
     list-style: none;
     height: 45px;
-    padding: 12px 16px;
-
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
 }
-.sidebar nav ul li:first-child{
+
+.sidebar nav ul .activated{
     background-color: var(--body);
+}
+
+.sidebar nav ul li i.material-icons {
+    padding-right: 8px;
+    margin-left: 0;
+    color: var(--gray2);
 }
 
 .sidebar nav ul li:hover {
@@ -158,8 +161,13 @@ header img{
     height: 50px;
     text-align: right;
     padding: 16px;
+    cursor: pointer;
 }
 
+.button.minimizer:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
 
 
 
