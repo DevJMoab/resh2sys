@@ -62,6 +62,8 @@ header{
     border-bottom: 1px solid var(--dark);
     background-color: var(--header);
     display: flex;
+
+
 }
 
 .app-header .menu-container{
@@ -69,13 +71,15 @@ header{
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
 
 } 
 
 
-/* -------------------- Menu Left -------------------- */
+/* -------------------- Left Menu -------------------- */
 .app-header{
     display: inline-flex;
+
 }
 .app-header .logo-navbar-minimized{
     display: none;
@@ -117,7 +121,7 @@ header{
     color: var(--light);
 }
 
-/* -------------------- Menu Right -------------------- */
+/* -------------------- Right Menu -------------------- */
 
 .app-header .menu-rigth{
     display: inline-flex;
@@ -181,7 +185,7 @@ span.box{
 /*--------------------sidebar------------------*/
 .sidebar{   
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - 105px);
     top: 55px;
     background-color: var(--header);
     border-right: 1px solid #23282c;
@@ -189,21 +193,7 @@ span.box{
     color: var(--light);
     font-size: 14px;
     transition: all .2s linear;
-    overflow-y: scroll;
-    scroll-behavior: auto;
-}
-
-.button.minimizer{
-    position: relative;
-    background-color: var(--body);
-    color: var(--gray);
-    border-right: 1px solid #23282c;
-    bottom: 0;
-    width: 200px;
-    height: 50px;
-    text-align: right;
-    padding: 16px;
-    cursor: pointer;
+    overflow-y: auto;
 }
 
 .sidebar .title{
@@ -236,14 +226,33 @@ span.box{
     margin-left: 0;
     color:var(--gray2);
 }
-                    
+
 .sidebar li.activated > .material-icons {
     color: var(--blue);
+    transition: 500ms;
+}
+
+.sidebar li:hover > .material-icons {
+    color:var(--white);
+    transition: 500ms;
 }
 
 .sidebar nav ul li:hover {
     background-color: var(--blue);
-    color: var(--light)
+    color:var(--white);
+}
+
+.button.minimizer{
+    position: relative;
+    background-color: var(--body);
+    color: var(--gray);
+    border-right: 1px solid #23282c;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    text-align: right;
+    padding: 16px;
+    cursor: pointer;
 }
 
 .button.minimizer:hover{
@@ -256,12 +265,12 @@ span.box{
 @media (max-width: 950px) {
     .menu-left ul, .menu-right ul {
         display: none;
-        }
-
+    }
+    
     header li.hidden {
         visibility: hidden; 
     }
-
+    
     .app-header .logo-navbar{
         position: absolute;
         left: 50%;
