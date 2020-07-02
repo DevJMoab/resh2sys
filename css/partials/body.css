@@ -1,0 +1,47 @@
+/*--------------------Body------------------*/
+.cards{
+    display: grid;
+    flex: wrap;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+    padding: 24px;
+}
+
+.card{
+    border-radius: 4px;
+    width: 156px;
+    height: 140;
+    padding: 16px;
+    color: var(--white);
+}
+
+.card h1,h3{
+    text-align: center;
+}
+
+.card h3{
+    font-size: 0.75rem;
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+
+.card h1{
+    font-weight: normal;
+}
+
+.card .material-icons{
+    font-size: 3rem;
+}
+
+.card:nth-child(1){
+    background-color: var(--blue);
+}
+.card:nth-child(2){
+    background-color: var(--info);
+}
+.card:nth-child(3){
+    background-color: var(--yellow);
+}
+.card:nth-child(4){
+    background-color: var(--danger);
+}

@@ -1,0 +1,54 @@
+/*--------------------Medias------------------*/
+
+@media (max-width: 950px) {
+    .menu-left ul, .menu-right ul {
+        display: none;
+    }
+    
+    header li.hidden {
+        visibility: hidden; 
+    }
+    
+    .app-header .logo-navbar{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+    }
+
+    .menu-left{
+        width: 30px;
+    }
+
+    .menu-left ul li i{
+        margin-left: 0;
+    }
+
+    /* Teste */
+
+    .sidebar{
+        width: 60px;
+    }
+    .sidebar ul li{
+        visibility: hidden;
+    }
+
+    .sidebar .title{
+        display: none;
+    }
+
+    .sidebar .material-icons{
+        visibility: visible;
+    }
+    
+    .button.minimizer{
+        width: 60px;
+        transition: 600ms;
+    }
+
+    .button.minimizer > .material-icons{
+        transform: rotate(180deg);
+        transition: 600ms;
+    }
+
+}

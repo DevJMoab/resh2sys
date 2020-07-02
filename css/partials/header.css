@@ -1,0 +1,154 @@
+:root {
+    --blue: #20a8d8;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #f86c6b;
+    --orange: #f8cb00;
+    --yellow: #ffc107;
+    --green: #4dbd74;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #c5c7c9;
+    --gray1: #c8ced3;
+    --gray2: #73818f;
+    --gray-dark: #2f353a;
+    --light-blue: #63c2de;
+    --primary: #20a8d8;
+    --secondary: #73818f;
+    --success: #4dbd74;
+    --info: #63c2de;
+    --warning: #ffc107;
+    --danger: #f86c6b;
+    --light: #f3f4f5;
+    --dark: #2f353a;
+    --body: #343b41;
+    --header:#3a4149;
+    --border: #23282c;
+   --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header{
+    width: 100vw;
+    height: 55px;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--header);
+    display: flex;
+
+
+}
+
+.app-header .menu-container{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+/* -------------------- Left Menu -------------------- */
+.app-header{
+    display: inline-flex;
+
+}
+.app-header .logo-navbar-minimized{
+    display: none;
+}
+
+.app-header .menu-left .button{
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.app-header .menu-left ul li{
+    display: inline-flex;
+    margin-left: 18px;
+    align-items: center;
+}
+.app-header .logo-navbar{
+    width: 155px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header .nav-bar-left{
+    display: flex;
+    align-items: center;
+}
+
+.app-header .menu-left{
+    display: inline-flex;
+}
+
+.app-header .menu-left a{
+    text-decoration: none;
+    color: var(--gray1);
+}
+
+.app-header .menu-left a:hover{
+    color: var(--light);
+}
+
+/* -------------------- Right Menu -------------------- */
+
+.app-header .menu-rigth{
+    display: inline-flex;
+}
+
+.app-header .menu-rigth ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.app-header .menu-rigth ul li{
+    display: inline-flex;
+    margin-right: 18px;
+}
+.app-header .menu-rigth img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.app-header .menu-rigth a{
+    cursor: pointer;
+    position: relative;
+    color: var(--gray1);
+}
+
+.app-header .menu-rigth a:hover{
+    color: var(--light);
+}
+
+span.box{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.box-notifications{
+    color: #fff;
+    background-color: var(--danger)
+}
+
+.box-tasks{
+    color: #fff;
+    background-color: var(--yellow)
+}
+
+.box-messages{
+    color: #fff;
+    background-color: var(--primary)
+}
+    
+.box-pill{
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 50%;
+}

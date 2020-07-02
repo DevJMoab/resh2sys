@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resh2</title>
-    <link rel="shortcut icon" href="/system/img/favicon.ico" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/partials/header.css">
+    <link rel="stylesheet" href="./css/partials/sidebar.css">
+    <link rel="stylesheet" href="./css/partials/footer.css">
+    <link rel="stylesheet" href="./css/partials/media.css">
+    <link rel="stylesheet" href="./css/partials/body.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body class="app-body">
     <header class="app-header">
         <a class="logo-navbar" href="#">
             <img class="logo-navbar-full" src="https://i.ibb.co/wSFcqCd/logo.png" width="96" alt="Logo">
@@ -23,7 +29,7 @@
                     <ul>
                         <li class="hidden"><a href="#dashboard">Dashboard</a></li>
                         <li class="hidden"><a href="#users">Users</a></li>
-                        <li class="hidden"><a href="#settings">Settings</a></li>
+                        <li class="hidden"><a href="./settings.html">Settings</a></li>
                     </ul>
                 </nav> 
             </div>
@@ -43,34 +49,73 @@
 
     </header>
     
-    <div class="sidebar">
-        <nav>
-            <ul>
-                    <li class="activated"><i class="material-icons dash">dashboard</i>Dashboard</li>
-                    <li class="title">Menu1</li>
-                    <li class=""><i class="material-icons">notifications_none</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">mail_outline</i>Sub-Menu</li>
-                    <li class="title">Menu2</li>
-                    <li class=""><i class="material-icons">format_list_bulleted</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">accessibility</i>Sub-Menu</li>
-                    <li class="title">Menu3</li>
-                    <li class=""><i class="material-icons">apps</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">attach_file</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">brightness_2</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">brightness_low</i>Sub-Menu</li>
-                    <li class="title">Menu4</li>
-                    <li class=""><i class="material-icons">location_on</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">palette</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">person</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">phonelink_setup</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">publish</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">wb_cloudy</i>Sub-Menu</li>
-                    <li class=""><i class="material-icons">add</i>Empty</li>
-                </ul>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                        <li class="activated"><i class="material-icons dash">dashboard</i>Dashboard</li>
+                        <li class="title">Menu1</li>
+                        <li class=""><i class="material-icons">notifications_none</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">mail_outline</i>Sub-Menu</li>
+                        <li class="title">Menu2</li>
+                        <li class=""><i class="material-icons">format_list_bulleted</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">accessibility</i>Sub-Menu</li>
+                        <li class="title">Menu3</li>
+                        <li class=""><i class="material-icons">apps</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">attach_file</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">brightness_2</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">brightness_low</i>Sub-Menu</li>
+                        <li class="title">Menu4</li>
+                        <li class=""><i class="material-icons">location_on</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">palette</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">person</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">phonelink_setup</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">publish</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">wb_cloudy</i>Sub-Menu</li>
+                        <li class=""><i class="material-icons">add</i>Empty</li>
+                    </ul>
 
-        </nav>
+            </nav>
+        </div>
+        
+        <div class="app-dash">
+            <div class="cards">
+                <div class="card">
+                    <i class="material-icons">group</i>
+                    <h1>128</h1>
+                    <h3>Clientes</h3>
+                </div>
+
+                <div class="card active">
+                    <i class="material-icons">playlist_add_check</i>
+                    <h1>128</h1>
+                    <h3>Tarefas</h3>
+                </div>
+
+                <div class="card">
+                    <i class="material-icons">notifications</i>
+                    <h1>128</h1>
+                    <h3>Notificações</h3>
+                </div>
+
+                <div class="card">
+                    <i class="material-icons">report</i>
+                    <h1>128</h1>
+                    <h3>Relatórios</h3>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <div class="button minimizer"><i class="material-icons">keyboard_arrow_left</i></div>    
     
+    <div class="foot">
+        <div class="button minimizer"><i class="material-icons">keyboard_arrow_left</i></div>  
+    
+        <footer class="app-footer"> 
+            <div class="footer-left"><a href="#">Resh 2 Sys</a> © 2020</div><div class="footer-right">Developed by <a href="#">JMoabS</a></div> 
+        </footer>  
+    </div>
+    
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    display: flex;
+}
+
+span{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bk-btn{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+
+.bk-btn:hover{
+    background-color: crimson;
+}
+
+.aaa{
+    background-color: brown;
+}
+
+.bbb{
+    background-color: chartreuse;
+}
+
