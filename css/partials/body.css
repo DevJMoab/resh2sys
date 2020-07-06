@@ -1,8 +1,41 @@
+:root {
+    --blue: #20a8d8;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #f86c6b;
+    --orange: #f8cb00;
+    --yellow: #ffc107;
+    --green: #4dbd74;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #c5c7c9;
+    --gray1: #c8ced3;
+    --gray2: #73818f;
+    --gray-dark: #2f353a;
+    --light-blue: #63c2de;
+    --primary: #20a8d8;
+    --secondary: #73818f;
+    --success: #4dbd74;
+    --info: #63c2de;
+    --warning: #ffc107;
+    --danger: #f86c6b;
+    --light: #f3f4f5;
+    --dark: #2f353a;
+    --body: #343b41;
+    --header:#3a4149;
+    --border: #23282c;
+   --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /*--------------------Body------------------*/
+
 .cards{
     display: grid;
     flex: wrap;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 155px 155px 155px 155px auto;
+    grid-template-rows: 155px auto 120px;
     grid-gap: 16px;
     padding: 24px;
 }
@@ -12,7 +45,9 @@
     width: 156px;
     height: 140;
     padding: 16px;
+    background: var(--header);
     color: var(--white);
+    border: 1px solid var(--white);
 }
 
 .card h1,h3{
@@ -33,15 +68,36 @@
     font-size: 3rem;
 }
 
-.card:nth-child(1){
+.card:nth-child(1).active{
     background-color: var(--blue);
+    border: none;
+    box-shadow: 0px 0px 11px 0px var(--blue);
 }
-.card:nth-child(2){
+.card:nth-child(2).active{
     background-color: var(--info);
+    border: none;
+    box-shadow: 0px 0px 11px 0px var(--info);
 }
-.card:nth-child(3){
+.card:nth-child(3).active{
     background-color: var(--yellow);
+    border: none;
+    box-shadow: 0px 0px 11px 0px var(--yellow);
 }
-.card:nth-child(4){
+.card:nth-child(4).active{
     background-color: var(--danger);
+    border: none;
+    box-shadow: 0px 0px 11px 0px var(--danger);
 }
+
+.calendar {
+    border-radius: 4px;
+    width: 69vh;
+    background: turquoise;
+    color: var(--white);
+}
+
+.calendar .calendar-header{
+    background-color: red;
+}
+
+
